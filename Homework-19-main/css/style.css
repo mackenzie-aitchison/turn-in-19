@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+header {
+  background-color: white;
+  padding: 0px;
+}
+
+header ul {
+  float: right;
+  color: black;
+
+}
+
+header li {
+  display: inline-block;
+  padding: 50px 5px;
+}
+
+header {
+  background-color: white;
+  padding: 15px;
+}
+
+header ul {
+  float: right;
+  color: white;
+}
+
+header li {
+  display: inline-block;
+  padding: 0px 5px;
+  color: black;
+}
+
+header p {
+  display: inline-block;
+}
+
+.Work {
+  background-color: white;
+  padding: 100px 15px;
+  float: left;
+  display: grid;
+  
+}
+
+.project {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #FFFFFF;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: 
+  "projectimage projectcontent"
+  ;
+ 
+}
+
+.projectimage {
+  grid-area: projectimage;
+}
+
+.projectcontent {
+  grid-area: projectcontent;
+}
+
+
+
+
+button {
+  padding: 15px;
+  background-color: #373738;
+  color: white;
+  font-size: 15px;
+  border-radius: 4px;
+}
+
+button.colored {
+  background: blue;
+}
+
+
+
+.button:hover {
+  color: var(#373738);
+  background: var(blue);
+}
+footer {
+  background-color: white;
+  padding: 5px;
+  color: black;
+
+}
+
+footer ul {
+  list-style: none;
+  text-align: right;
+  padding: 20px;
+}
+
+footer li {
+  display: inline-block;
+  padding: 0px 7px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .project {
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "projectimage" 
+    "projectcontent"
+    ;
+    
+  }
+  
+}
